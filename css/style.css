@@ -298,6 +298,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .all {
+    background-color: #563A2E;
+  }
   .all2 {
     width: 100%;
   }
