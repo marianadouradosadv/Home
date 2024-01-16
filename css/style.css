@@ -298,27 +298,5 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .all {
-    background-color: #563A2E;
-  }
-  .all2 {
-    width: 100%;
-  }
   
-  .cube {
-    margin-right: 0;
-  }
-  
-  .carousel-wrapper {
-    width: 100%;
-  }
-  
-  .prev-button, .next-button {
-    padding: 5px;
-  }
-  
-  .f_logo img {
-    width: 50px;
-    height: auto;
-  }
 }
