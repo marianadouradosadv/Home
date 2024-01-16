@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #563A2E;
+}
+
+.all2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.primeira_tela {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #C28C5E;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #C28C5E;
+}
+
+nav button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.botao_e_icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.botao_e_icone button {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.botao_e_icone button img {
+  margin-right: 10px;
+}
+
+.segunda_tela {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.segunda_tela_cor {
+  background-color: #C28C5E;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cube {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.cube h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5 );
+}
+
+/* .carousel {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item {
+  width: 200px;
+  height: 150px;
+  margin: 0 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.carousel {
+  width: 600px;  /* Define a largura do carrossel */
+  overflow: hidden;  /* Oculta conteúdo que ultrapassa a largura definida */
+  position: relative;  /* Define uma posição relativa para os elementos filhos */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Adiciona uma sombra sutil ao carrossel */
+  
+  
+}
+
+/* Estilo para os itens do carrossel */
+.carousel-item {
+  width: 100%;  /* Ocupa 100% da largura do carrossel */
+  height: auto;  /* Ajusta a altura automaticamente para manter a proporção da imagem */
+  transition: opacity 0.5s ease-in-out;  /* Adiciona uma transição suave de opacidade */
+  box-sizing: border-box;  /* Inclui a largura e a altura no modelo de caixa (box model) */
+  display: none;  /* Inicialmente, os itens são ocultos */
+}
+
+/* Estilo para o item ativo do carrossel (o item que está sendo exibido) */
+.carousel-item.active {
+  display: block;  /* Exibe o item ativo */
+  width: 100%;  /* Ocupa 100% da largura do contêiner */
+  height: 150px;  /* Ajusta a altura automaticamente para manter a proporção da imagem */
+}
+
+/* Estilo para as imagens dentro dos itens do carrossel */
+.carousel-item img {
+  width: 100%;  /* Ocupa 100% da largura do contêiner */
+  height: auto;  /* Ajusta a altura automaticamente para manter a proporção da imagem */
+}
+
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.prev-button {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4 );
+}
+
+.next-button {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4 );
+}
+
+footer {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.f_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.f_logo img {
+  
+  object-fit: cover;
+ 
+}
+
+.footer_items {
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+/* .f_item img {
+  width: 12px;
+  height: 12px;
+  object-fit: cover;
+} */
+
+.f_item_L {
+  margin-left: 20px ;
+}
+
+.f_infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
+  font-size: 13px;
+  font-family: Verdana, sans-serif;
+}
+
+.f_infos b {
+  font-size: 18px;
+  
+}
+
