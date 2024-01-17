@@ -410,8 +410,8 @@ footer {
   }
 
   .f_item img {
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     object-fit: cover;
   }
   
