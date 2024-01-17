@@ -386,11 +386,11 @@ footer {
   }
 
   .f_item {
-    font-size: 5px;
+    font-size: 5.3px;
   }
 
   .f_item_L {
-    font-size: 5px;
+    font-size: 5.3px;
     margin-left: 20px ;
   }
 
@@ -407,6 +407,12 @@ footer {
   .f_infos b {
     font-size: 8px;
     
+  }
+
+  .f_item img {
+    width: 6px;
+    height: 6px;
+    object-fit: cover;
   }
   
 }
