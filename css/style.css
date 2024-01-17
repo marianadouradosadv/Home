@@ -297,6 +297,102 @@ footer {
   
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
+  #logo_comp{
+    width: 90px;
+  }
+
+  .all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #563A2E;
+  }
+
+  .all2 {
+    align-items: center;
+    display: block;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  }
+  nav a {
+    text-decoration: none;
+    color: #C28C5E;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  nav button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .segunda_tela_cor {
+    background-color: #C28C5E;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    
+    width: 500px;
+  }
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+
+  }
+
+  .cube {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    margin-right: 20px;
+    height: 120px;
+    width: 460px;
+    position: relative;
+  }
+
+  .cube h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-wrapper {
+    position: relative;
+    width: 460px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5 );
+  }
+
+  .f_infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10px;
+    font-size: 8px;
+    font-family: Verdana, sans-serif;
+  }
+  
+  .f_infos b {
+    font-size: 8px;
+    
+  }
   
 }
