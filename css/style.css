@@ -20,7 +20,7 @@ body {
 .all2 {
   align-items: center;
   display: block;
-  max-width: 800px;
+  width: 90vw;
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
@@ -29,7 +29,7 @@ body {
 
 .primeira_tela {
   width: 100%;
-  max-width: 800px;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,39 +37,41 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 800px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-
+  justify-content: center;
+  flex-direction: column;
 }
 
 header {
-  width: 100%;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: initial;
   align-items: center;
-  width: 100%;
-  
+  width: 100%; 
 }
 
-nav a {
+nav img {
+  object-fit: cover;
+}
+
+.menu a {
   text-decoration: none;
   color: #C28C5E;
   font-size: 18px;
-  margin-right: 20px;
+  margin-left: 3vw;
+  
 }
 
-nav a:hover {
+.menu a:hover {
   border-bottom: 3px solid #C28C5E;
 }
 
@@ -81,18 +83,38 @@ nav button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  margin-left: auto;
 }
 
-h1, h2 {
-  text-align: center;
-  margin-bottom: 30px;
+.barra1 {
+  width: 90vw;
+  height: 1vh;
+  border-top: 1vh solid #C28C5E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgb(105, 105, 105);
+}
+
+.topo{
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  width: 70vw;
+  height: 60vh;
+}
+
+.topo h1 {
+  margin-bottom: 7vh;
+}
+.topo h2 {
+  margin-bottom: 12vh;
 }
 
 .botao_e_icone {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1vh;
 }
 
 .botao_e_icone button {
@@ -111,183 +133,229 @@ h1, h2 {
   margin-right: 10px;
 }
 
+.topo p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .segunda_tela {
   width: 100%;
-  max-width: 800px;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.segunda_tela_cor {
-  background-color: #C28C5E;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-}
-
-.block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-.inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.cube {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  text-align: center;
-  flex: 1;
-  margin-right: 20px;
-}
-
-.cube h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.carousel-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.carousel-wrapper {
-  position: relative;
-  width: 600px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5 );
-}
-
-/* .carousel {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  align-items: center;
-}
-
-.carousel-item {
-  width: 200px;
-  height: 150px;
-  margin: 0 20px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-.carousel {
-  width: 600px;  /* Define a largura do carrossel */
-  overflow: hidden;  /* Oculta conteúdo que ultrapassa a largura definida */
-  position: relative;  /* Define uma posição relativa para os elementos filhos */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Adiciona uma sombra sutil ao carrossel */
-  
-  
-}
-
-/* Estilo para os itens do carrossel */
-.carousel-item {
-  width: 100%;  /* Ocupa 100% da largura do carrossel */
-  height: auto;  /* Ajusta a altura automaticamente para manter a proporção da imagem */
-  transition: opacity 0.5s ease-in-out;  /* Adiciona uma transição suave de opacidade */
-  box-sizing: border-box;  /* Inclui a largura e a altura no modelo de caixa (box model) */
-  display: none;  /* Inicialmente, os itens são ocultos */
-}
-
-/* Estilo para o item ativo do carrossel (o item que está sendo exibido) */
-.carousel-item.active {
-  display: block;  /* Exibe o item ativo */
-  width: 100%;  /* Ocupa 100% da largura do contêiner */
-  height: 150px;  /* Ajusta a altura automaticamente para manter a proporção da imagem */
-}
-
-/* Estilo para as imagens dentro dos itens do carrossel */
-.carousel-item img {
-  width: 100%;  /* Ocupa 100% da largura do contêiner */
-  height: auto;  /* Ajusta a altura automaticamente para manter a proporção da imagem */
-}
-
-
-.carousel-controls {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.prev-button {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4 );
-}
-
-.next-button {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4 );
-}
-
-footer {
-  width: 100%;
-  max-width: 800px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 50px;
 }
 
-.footer_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.lista_servicos ul {
+  list-style-type: none;
+  margin: 3vh;
+  margin-bottom: 10vh;
+  padding-left: 0;
+  padding-top: 3vh;
+  width: 65vw;
+  background-color: #C28C5E;
+  border-radius: 2vh;
+  color: #ffffff;
+  box-shadow: 0px 5px 10px rgb(105, 105, 105);
 }
 
-.f_logo {
+.lista_servicos li {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-right: 20px;
-}
-
-.f_logo img {
+  padding: 2vh 3vw;
+  margin-bottom: 2vh;
   
-  object-fit: cover;
+  
+}
+
+.lista_servicos li img {
+  width: 5.5vw;
+  height: 6.5vw; 
+  margin-right: 1vw;
+  margin-bottom: 5vh;
+}
+
+.lista_servicos li span {
+  font-size: 3vw;
+}
+
+.lista_servicos li h2 {
+  font-size: 2vw;
  
 }
 
-.footer_items {
-  white-space: nowrap;
-  font-size: 11px;
+.lista_servicos li button {
+  background-color: #25D366;
+  color: white;
+  margin-left: auto;
+  padding: 2vh 2vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
 
-/* .f_item img {
-  width: 10px;
-  height: 10px;
+.legenda {
+  font-size: x-large;
+}
+
+.depoimentos {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr; /* Cria duas colunas com largura iguais */
+  grid-gap: 1vw; /* Define um espaçamento entre as colunas */
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+  width: 60vw;
+}
+
+.coluna1 h2 {
+font-size: 2vw ;
+}
+
+.coluna2 p{
+  margin-top: 4vh;
+  min-height: 15vh;
+}
+
+.coluna2 h3{
+text-align: right;
+margin-right: 2vw;
+}
+
+.coluna2 img {
+  float: right;
+  margin-right: 2vw;
+
+}
+
+.voltar_ao_topo a{
+  text-decoration: none;
+}
+
+.voltar_ao_topo button{
+  background-color: #dfdfdf;
+  color: rgb(0, 0, 0);
+  padding: 2vh 2vw;
+  border-style: groove;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+
+.topo_abas{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  text-align: center;
+} 
+
+.topo_abas h1{
+  margin-bottom: 5vh;
+}
+
+.equipe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.equipe_txt h1 {
+  font-size: x-large;
+}
+
+.equipe_txt h2 {
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+}
+
+.equipe_txt h3 {
+  margin-left: 0vw;
+}
+
+.membros_equipe {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 7vh;
+}
+.membro {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.membro img {
+  margin-bottom: 2vh;
+}
+
+.depoimentos_topo{
+  text-align: left;
+  width: 47vw;
+  margin-top: 8vh;
+}
+
+.depoimentos_lista{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+.depoimentos_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 27vw;
+}
+
+.depoimentos_item{
+  width: 20vw;
+  text-align: center;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  border: #563A2E dashed 2px;
+  border-radius: 3vw;
+  padding:  2vw 2vh 2vw 2vh;
+}
+
+
+
+.barra2 {
+  width: 90vw;
+  height: 1vh;
+  border-bottom: 1vh solid #C28C5E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -5px 10px rgba(105, 105, 105);
+}
+
+footer {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.logo_footer {
   object-fit: cover;
-} */
-
-.f_item_L {
-  margin-left: 20px ;
 }
+
 
 .f_infos {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  margin-right: 20px;
   font-size: 13px;
   font-family: Verdana, sans-serif;
 }
@@ -343,46 +411,6 @@ footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
     
     width: 300px;
-  }
-
-  .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 270px;
-
-  }
-
-  .cube {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    padding: 5px;
-    text-align: center;
-    flex: 1;
-    margin-right: 10px;
-    height: 100px;
-    width: 260px;
-    position: relative;
-  }
-
-  .cube h1 {
-    font-size: 12px;
-    margin-bottom: 20px;
-  }
-
-  .carousel {
-    width: 400px;  /* Define a largura do carrossel */
-    height: 100px;
-    overflow: hidden;  /* Oculta conteúdo que ultrapassa a largura definida */
-    position: relative;  /* Define uma posição relativa para os elementos filhos */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Adiciona uma sombra sutil ao carrossel */
-  }
-  .carousel-wrapper {
-    position: relative;
-    width: 240px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5 );
   }
 
   .f_item {
