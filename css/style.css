@@ -3,7 +3,6 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -15,6 +14,7 @@ body {
   min-height: 100vh;
   padding: 20px;
   background-color: #563A2E;
+  min-width: 100vw;
 }
 
 .all2 {
@@ -49,6 +49,8 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   
 }
 
@@ -84,6 +86,9 @@ nav button {
   cursor: pointer;
   font-size: 18px;
   margin-left: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .barra1 {
@@ -101,13 +106,23 @@ nav button {
   margin-bottom: 5vh;
   width: 70vw;
   height: 60vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
 }
 
 .topo h1 {
   margin-bottom: 7vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 .topo h2 {
   margin-bottom: 12vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .botao_e_icone {
@@ -127,6 +142,9 @@ nav button {
   font-size: 18px;
   display: flex;
   align-items: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .botao_e_icone button img {
@@ -150,6 +168,7 @@ nav button {
   border-radius: 2vh;
   color: #ffffff;
   box-shadow: 0px 5px 10px rgb(105, 105, 105);
+  
 }
 
 .lista_servicos li {
@@ -168,10 +187,18 @@ nav button {
 
 .lista_servicos li span {
   font-size: 3vw;
+  font-family: "Lato", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  text-shadow: -2px 2px 3px rgb(0, 0, 0);
 }
 
 .lista_servicos li h2 {
   font-size: 2vw;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 0px 5px 5px rgb(0, 0, 0);
  
 }
 
@@ -186,7 +213,11 @@ nav button {
   font-size: 20px;
   display: flex;
   align-items: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
+
 
 
 .depoimentos {
@@ -200,17 +231,31 @@ nav button {
 }
 
 .coluna1 h2 {
-font-size: 2vw ;
+  font-size: 2vw ;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.coluna1 h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .coluna2 p{
   margin-top: 4vh;
   min-height: 15vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .coluna2 h3{
-text-align: right;
-margin-right: 2vw;
+  text-align: right;
+  margin-right: 2vw;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .coluna2 img {
@@ -221,12 +266,13 @@ margin-right: 2vw;
 
 .voltar_ao_topo a{
   text-decoration: none;
+  
 }
 
 .voltar_ao_topo button{
   background-color: #dfdfdf;
   color: rgb(0, 0, 0);
-  padding: 2vh 2vw;
+  padding: 1.5vh 1.5vw;
   border-style: groove;
   border-radius: 6px;
   cursor: pointer;
@@ -244,6 +290,9 @@ margin-right: 2vw;
 
 .topo_abas h1{
   margin-bottom: 5vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .equipe {
@@ -258,22 +307,33 @@ margin-right: 2vw;
 .equipe_txt h2 {
   margin-top: 10vh;
   margin-bottom: 3vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .equipe_txt p {
   margin-left: 0vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .membros_equipe {
+  width: 50vw;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 7vh;
+  
 }
 .membro {
   width: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
   text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .membro img {
@@ -284,6 +344,9 @@ margin-right: 2vw;
   text-align: left;
   width: 47vw;
   margin-top: 8vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .depoimentos_lista{
@@ -296,7 +359,6 @@ margin-right: 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   width: 27vw;
 }
 
@@ -308,6 +370,17 @@ margin-right: 2vw;
   border: #563A2E dashed 2px;
   border-radius: 3vw;
   padding:  2vw 2vh 2vw 2vh;
+}
+
+.depoimentos_item p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.depoimentos_item h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 
@@ -327,6 +400,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .logo_footer {
@@ -347,9 +422,9 @@ footer {
   
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1070px) {
   #logo_main{
-    width: 22vw;
+    width: 23vw;
   }
 
   .all {
@@ -386,7 +461,7 @@ footer {
     text-decoration: none;
     color: #C28C5E;
     justify-content: space-around;
-    font-size: 12px;
+    font-size: 3vw;
   }
 
   nav button {
@@ -401,13 +476,13 @@ footer {
   }
 
   .topo h1 {
-    font-size: 17px;
+    font-size: 4vw;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   .topo h2 {
-    font-size: 15px;
+    font-size: 3vw;
     margin-top: 3vh;
     margin-bottom: 5vh;
   }
@@ -423,7 +498,7 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 4vw;
     display: flex;
     align-items: center;
   }
@@ -439,7 +514,7 @@ footer {
     background-color: #C28C5E;
     border-radius: 2vh;
     color: #ffffff;
-    box-shadow: 0px 5px 10px rgb(105, 105, 105);
+    box-shadow: 0px 2px 4px rgb(105, 105, 105);
     padding-top: 0;
     margin-top: 0;
   }
@@ -461,11 +536,11 @@ footer {
   }
   
   .lista_servicos li span {
-    font-size: 13px;
+    font-size: 3.5vw;
   }
   
   .lista_servicos li h2 {
-    font-size: 15px;
+    font-size: 4vw;
    
   }
   
@@ -477,7 +552,7 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 3vw;
     display: flex;
     align-items: center;
   }
@@ -493,27 +568,27 @@ footer {
   }
   
   .coluna1 h2 {
-  font-size: 15px;
+  font-size: 4vw;
   }
 
   .coluna1 h3 {
-    font-size: 13px;
+    font-size: 3.5vw;
   }
   
   .coluna2 p{
-    font-size: 10px;
+    font-size: 2.5vw;
     margin-top: 5vh;
     min-height: 15vh;
   }
   
   .coluna2 h3{
-  font-size: 13px;
+  font-size: 3vw;
   text-align: right;
   margin-right: 2vw;
   }
   
   .coluna2 img {
-    width: 18vw;
+    width: 15vw;
     float: right;
     margin-right: 2vw;
   }
@@ -525,7 +600,7 @@ footer {
     border-style: groove;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 3vw;
     display: flex;
     align-items: center;
     margin-bottom: 3vw;
@@ -535,7 +610,7 @@ footer {
     margin-top: 1vh;
     margin-bottom: 1vh;
     text-align: center;
-    font-size: 9px;
+    font-size: 2vw;
   } 
 
   .topo_abas h1 {
@@ -554,12 +629,16 @@ footer {
   .equipe_txt h2 {
     margin-top: 0vh;
     margin-bottom: 1vh;
-    font-size: 18px;
+    font-size: 3vw;
   }
   
   .equipe_txt p {
     margin-left: 0vw;
-    font-size: 13px;
+    font-size: 2vw;
+  }
+
+  .equipe img{
+    width: 20vw;    
   }
   
   .membros_equipe {
@@ -576,25 +655,26 @@ footer {
   }
   
   .membro h2 {
-    font-size: 12px;
+    font-size: 2vw;
   }
 
   .membro img {
     margin-bottom: 1vh;
+    width: 15vw;
   }
 
   .depoimentos_topo{
     text-align: left;
     width: 80vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
   }
 
   .depoimentos_topo h2 {
-    font-size: 18px;
+    font-size: 3vw;
   }
 
   .depoimentos_topo h3 {
-    font-size: 15px;
+    font-size: 2.5vw;
   }
   
   .depoimentos_lista{
@@ -602,40 +682,40 @@ footer {
     justify-content: space-around;
     margin-bottom: -1vh;
     width: 95vw;
+    flex-direction: column;
+    
   }
   
   .depoimentos_column {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-around;
-    width: 40vw;
+    align-items: center;
+    width: auto;
   }
   
   .depoimentos_item{
-    width: 43vw;
+    width: 60vw;
     text-align: center;
     margin-top: 2vh;
     margin-bottom: 3vh;
     border: #563A2E dashed 2px;
     border-radius: 3vw;
     padding:  2vw 2vh 2vw 2vh;
-  }
-  
-  .depoimentos_icon img{
-    height: 9vh;
+    justify-content: space-around;
   }
 
   .depoimentos_item img{
-    width: 18vw;
+    width: 17vw;
   }
 
   .depoimentos_item h4{
-    font-size: 14px;
+    font-size: 3vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
   }
 
   .depoimentos_item p {
-    font-size: 11px;
+    font-size: 2.5vw;
   }
 
 
@@ -649,32 +729,12 @@ footer {
   }
 
   .f_item {
-    font-size: 6.5px;
-  }
-
-  .f_item_L {
-    font-size: 6.5px;
-    margin-left: 20px ;
-  }
-
-  .f_infos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-right: 10px;
-    font-size: 7px;
-    font-family: Verdana, sans-serif;
-  }
-  
-  .f_infos b {
-    font-size: 8px;
-    
+    font-size: 1.5vw;
   }
 
   .f_item img {
-    width: 6px;
-    height: 6px;
+    width: 1.5vw;
+    
     object-fit: cover;
   }
   
