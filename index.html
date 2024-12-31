@@ -7,6 +7,51 @@
     <title>Redirecionando...</title>
 </head>
 <body>
-    <p>Redirecionando você para o arquivo principal...</p>
+    <div class="redirect">
+        <img src="img/logo+.png" alt="arte com logotipos do escritório sobrepostas">
+        <p>Redirecionando...</p>
+    </div>
 </body>
 </html>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .redirect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redirect img{
+        width: 200px;
+        display: inline-block; /* Necessário para animações com transformações */
+        animation: pular 0.5s ease-in-out infinite; /* Animação */
+    }
+
+    @keyframes pular {
+        0% {
+            transform: translateY(0); /* Posição inicial */
+        }
+        50% {
+            transform: translateY(-10px); /* Pulo para cima */
+        }
+        100% {
+            transform: translateY(0); /* Volta para a posição original */
+        }
+    }
+    
+    .redirect p{
+        color: #d17000;
+        font-size: 24px;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 10px;
+    }
+</style>
