@@ -454,12 +454,12 @@ button:hover {
   }
 
   .banner .textside .banner-text {
-    width: clamp(250px, 55vw, 510px);
+    width: clamp(250px, 49vw, 450px);
     height: auto;
   }
 
   .banner .textside .banner-text h1 {
-    font-size: clamp(12px, 3vw, 24px);
+    font-size: clamp(10px, 2.4vw, 22px);
     margin-left: 10px;
   }
 
